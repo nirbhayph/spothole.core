@@ -62,7 +62,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
   * In addition to this freely available pothole video feeds to create the dataset were also used. For a near to decent detection result, we should look to collect at least 500+ images. The dataset has been provided with the repository. 
   * In case of video files, we can upload it to our server using an sftp client like Filezilla or by directly using ssh on the terminal of our local machine. The next step was to write a script to slice this uploaded video to images. Python’s  OpenCV (cv2 package and Video Capture Module)  to divide the feed into frames. 
   * Using ‘pip install’ the following dependencies need to be added. [pillow, lxml, jupyter, matplotlib, protobuffer] 
-  * To prepare the input files for DarkFlow we need to consider two things. Firstly, we need an RGB image which is encoded as jpeg or png and secondly, we need a list of bounding boxes (xmin, ymin, xmax, ymax) for the image and the class of the object in the bounding box. 
+  * After cloning the DarkFlow repository, to prepare the input files for DarkFlow we need to consider two things. Firstly, we need an RGB image which is encoded as jpeg or png and secondly, we need a list of bounding boxes (xmin, ymin, xmax, ymax) for the image and the class of the object in the bounding box. 
   * Our class, in this case, is ‘pothole’. We then need to label our images with a tool like LabelImg to identify areas of interest with bounding boxes. 
   * LabelImg is a graphical image annotation tool that is written in Python and uses Qt for the graphical interface. 
   * It supports Python 2 and 3. The annotations are saved as XML files in the Pascal VOC format We can split the data to train and test sets before running the training command. 
@@ -76,7 +76,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
   ```
   flow --pbLoad built_graph/yolo.pb --metaLoad built_graph/yolo.meta --imgdir sample_img/
   ```
-  * The dataset, the annotation files, the built model have all been provided with the repository for reference. 
+  * The dataset, the annotation files, the built model have all been provided with the repository for reference. You can follow the steps mentioned above only if you wish to have a fresh start to training and testing the model. 
   
 
   
