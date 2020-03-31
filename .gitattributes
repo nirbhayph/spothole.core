@@ -1,1 +1,2 @@
 *.data* filter=lfs diff=lfs merge=lfs -text
+darkflow_object_detection_model/ckpt/ filter=lfs diff=lfs merge=lfs -text
