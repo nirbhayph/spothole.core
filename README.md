@@ -52,9 +52,9 @@ Link to Authority App's Repository: https://github.com/nirbhayph/spothole.author
 #### Core Backend App Project Structure
 Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_structure/
 
-#### Process Description
-##### The backend comprises of two main sections. The first being the object detection model built using Darkflow. The second being the Flask API for data exchange between the model built, the database and the frontend. 
-###### 1. Object Detection Model
+### Process Description
+#### The backend comprises of two main sections. The first being the object detection model built using Darkflow. The second being the Flask API for data exchange between the model built, the database and the frontend. 
+##### 1. Object Detection Model
   * As the focus of the application was to create a rest api to automate the process of pothole validation with media files, from the beginning itself a cloud server was used for implementation. A [EC2 Amazon Web Services Instance](https://aws.amazon.com/ec2/instance-types/) was used for this purpose. 
   * AWS EC2 C5 instance (model: c5.xlarge) after choosing Ubuntu 18 which features the Intel Xeon Platinum 8000 series and offers a set of 4vCPUs each with 8 GiB of memory was chosen for training the object detection model. 
   * The model is trained on top of [Darkflow](https://github.com/thtrieu/darkflow)  and built on top of pretrained weights which were obtained from [Darknet](https://pjreddie.com/darknet/). 
