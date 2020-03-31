@@ -1,0 +1,6 @@
+sudo python3 flow --imgdir ***your_img_directory_here*** --model cfg/yolov2-tiny-voc-1c.cfg --load 5500 --threshold 0.2
+
+
+sudo python3 flow --demo camera --model cfg/yolov2-tiny-voc-1c.cfg --load 5500 --threshold 0.1
+
+

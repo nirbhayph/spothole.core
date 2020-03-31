@@ -1,0 +1,22 @@
+<annotation>
+  <folder>images</folder>
+  <filename>000282.png</filename>
+  <segmented>0</segmented>
+  <size>
+    <width>800</width>
+    <height>466</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>pothole</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>67</xmin>
+      <ymin>235</ymin>
+      <xmax>476</xmax>
+      <ymax>360</ymax>
+    </bndbox>
+  </object>
+</annotation>
