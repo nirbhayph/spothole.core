@@ -54,7 +54,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 
 ### Process Description
 #### The backend comprises of two main sections. The first being the object detection model built using Darkflow. The second being the Flask API for data exchange between the model built, the database and the frontend. 
-##### 1. Object Detection Model
+#### 1. Object Detection Model
   * As the focus of the application was to create a rest api to automate the process of pothole validation with media files, from the beginning itself a cloud server was used for implementation. A [EC2 Amazon Web Services Instance](https://aws.amazon.com/ec2/instance-types/) was used for this purpose. 
   
   * AWS EC2 C5 Instance (model: c5.xlarge) after choosing Ubuntu 18 which features the Intel Xeon Platinum 8000 series and offers a set of 4vCPUs each with 8 GiB of memory was chosen for training the object detection model. 
@@ -95,6 +95,8 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
   ```
   
   * The dataset, the annotation files, the built model have all been provided with the repository for reference. You can follow the steps mentioned above only if you wish to have a fresh start to training and testing the model. 
+  
+  (Process Diagram Here) 
   
 #### 2. Flask API
  * 
