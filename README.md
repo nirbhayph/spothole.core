@@ -153,6 +153,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 | Protobuf Compilation (Model) | Backend |
 | Image Annotations | Backend |
 | Rename and Rearrange Files (Script) | Backend |
+| Image Crawler on top of Py Image Search | Backend |
 | Video File Slicing (Script) | Backend |
 | Output File Storage | Backend | 
 | Route 53 (Hosted Zone) on Amazon Web Services (AWS) | Backend | 
@@ -169,52 +170,25 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 | Geo Near Reports Querying | Authority |
 | Flask API Controller | Authority, Citizen |
 
-### Libraries Used
-* The Application has been built using React.js
-* Material Design has been used throughout the App.
-* Material UI Icons have been used for Icons. 
-* MUI-Treasury Componenets have been used for additional needs (Like Card View in the Profile Screen)
-* Axios has been used for making REST Calls to the Backend.
-* GitHub Pages has been used for Static Deployment of the Application. 
-* React Google Maps has been used for all Mapping, Heat Mapping, Marker Needs. 
-* Google Oauth 2.0 has been used Application Wide for Authentication Purposes. 
-* Material UI Datatables are used for Displaying Zone Wise Report Data and Managing Users. 
-* Recharts is used for Analytics Needs. 
+### Tools Libraries and Languages Used
+* The Backend Application has been built with Python at its Core. 
+* The REST API has been built with Flask. 
+* The Object Detection Model has been built using DarkFlow on top of Darknet. 
+* The Final Model is a Protobuf Compilation (Minified). 
+* Mysql has been used for Database needs. 
+* Package smptlib has been used for Sending Emails. 
+* Package flask_cors has been used to manage Cross Origin Requests. 
+* Package mysql is used to interact between Python and MySql. 
+* Package cv2 is used to create Bounding Boxes at Runtime.
+* The Parent Service which Communicates with the Deep Learning Model uses the TensorFlow Compressed Model created.
+* Amazon Web Services has been used for Deployment Purposes. 
+* Certbot has been used for HTTPS Configuration
+* Freenom has been used for Domain needs.
+* Apache is used for Server needs.
+* FileZilla and GitBash are used for SFTP and SSH needs. 
+* Chrome Dev Tools and Postman are used for API Manual Testing. 
 
-#### Libarary Details
-| Library Name | Version |
-| --- | --- |
-| @material-ui/core | ^4.9.5 |
-| @material-ui/icons | ^4.9.1 |
-| @material-ui/lab | ^4.0.0-alpha.45 |
-| @mui-treasury/components | ^1.0.0 |
-| @mui-treasury/styles | ^1.0.0 |
-| @mui-treasury/styling | ^0.2.8 |
-| @testing-library/jest-dom | ^4.2.4 |
-| @testing-library/react | ^9.5.0 |
-| @testing-library/user-event | ^7.2.1 |
-| autosuggest-highlight | ^3.1.1 |
-| axios | ^0.19.2 |
-| bootstrap | ^4.4.1 |
-| dateformat | ^3.0.3 |
-| gh-pages | ^2.2.0 |
-| lodash | ^4.17.15 |
-| mui-datatables | ^2.14.0 |
-| react | ^16.13.1 |
-| react-dom | ^16.13.1 |
-| react-filepond | ^7.0.1 |
-| react-google-maps | ^9.4.5 |
-| react-router | ^5.1.2 |
-| react-router-dom | ^5.1.2 |
-| react-scripts | 3.4.1 |
-| recharts | ^1.8.5 |
-| recompose | ^0.30.0 |
-
-#### Note. Features associated with each screen have been mentioned in the Feature Stack Table. 
-
-(Process Diagram Here)
-
-### Instructions to Set-Up the Authority Application
+### Instructions to Set-Up the Backend Application
  * Follow the instructions on this page to install nodejs and npm. Once successfully done, proceed to the next steps. 
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
@@ -237,19 +211,21 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
 ### Deploying 
 
-The authority's application has been hosted through GitHub pages. Refer the link: https://github.com/gitname/react-gh-pages to create a similar deployment. 
+The authority's application has been hosted through Amazon Web Services. 
 
 ### Future Work
-* Parent Authority Section (Admin User)
-* In-App Work Order Assignment 
-* Worker App 
+* Pothole Dimension (Width / Height) Analysis 
+* Machine Level Severity Analysis
+* OAuth JWT Server Authorization
+* Worker App Backend  
 * Push Notifications 
-* Authority Hierarchy Management 
-* Permision Level System 
-* Extended Analytics Section (Hierarchy Based) 
-* Linking Social Platforms (Twitter)
-* News Feed 
-* Reward System 
+* Authority Hierarchy Management (Database, API) 
+* Permision Level System (Database, API)
+* Analytics API
+* Extended Analytics Section (Hierarchy Based)  
+* News Feed (Database, API)
+* Reward System (Database, API)
+* User Blocking (Region Level)
 
 ### Note 
 For developers out there, if you wish to contribute to the project, feel free to do so. Please review the future work section and create pull requests for ideas and thoughts. Once approved, we can follow up with more discussions.  
