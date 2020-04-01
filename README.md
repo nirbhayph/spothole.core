@@ -127,24 +127,24 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
  
  * The following endpoints have been created for the API. 
 
-| End Point | Screen Name | Method | Params | Application
+| End Point | Screen Name | Method | Required Params (Keys) | Application
 | --- | --- | --- | --- | --- |
-| /api/profile/authority/update | For updating a authority's profile details | POST | Parameters | Authority |
-| /api/authority/check | For validating auhtority credentials | POST | Parameters | Authority |
-| /api/authority/reports/geonear | For querying reports in an authority's zone | POST | Parameters | Authority |
-| /api/authority/update/report | For updating a report's status (for authority) | POST | Parameters | Authority |
-| /api/profile/authority/data | For retreiving a authority's profile details, location and address | POST | Parameters | Authority |
-| /api/authority/update/user/status | For changing the status of a user (blocked / allowed) | POST | Parameters | Authority |
-| /api/authority/send/email | For notifying a user via email | POST | Parameters | Authority | 
-| /api/reports/all | For retrieving all users reports | POST | Parameters | Citizen, Authority |
-| /api/reports | For retrieveing a particular user's reports | POST | Parameters | Citizen, Authority |
-| /api/submit/report/comment | For submitting a comment on a report | POST | Parameters | Citizen, Authority |
-| /api/reports/comments | For retrieving all comments on a report | POST | Parameters | Citizen, Authority |
-| /api/submit/report | For submitting a new report | POST | Parameters | Citizen |
-| /api/upload | For uploading files to the server | POST | Parameters | Citizen |
-| /api/detect/single | For detecting whether an image has a pothole. (Object Detection) | POST | Parameters | Citizen |
-| /api/profile/update | For updating a user's basic profile details | POST | Parameters | Citizen |
-| /api/user/validate | For validating a user's status (allowed / blocked) | POST | Parameters | Citizen |
+| /api/profile/authority/update | For updating a authority's profile details | POST | authorityId, emailId, name, photoURL | Authority |
+| /api/authority/check | For validating auhtority credentials | POST | emailId | Authority |
+| /api/authority/reports/geonear | For querying reports in an authority's zone | POST | authorityId | Authority |
+| /api/authority/update/report | For updating a report's status (for authority) | POST | severity, status, caseId | Authority |
+| /api/profile/authority/data | For retreiving a authority's profile details, location and address | POST | authorityId | Authority |
+| /api/authority/update/user/status | For changing the status of a user (blocked / allowed) | POST | userId, status | Authority |
+| /api/authority/send/email | For notifying a user via email | POST | emailId, message, subject | Authority | 
+| /api/reports/all | For retrieving all users reports | POST | (N/A) | Citizen, Authority |
+| /api/reports | For retrieveing a particular user's reports | POST | userId | Citizen, Authority |
+| /api/submit/report/comment | For submitting a comment on a report | POST | userType, commentText, caseId | Citizen, Authority |
+| /api/reports/comments | For retrieving all comments on a report | POST | caseId | Citizen, Authority |
+| /api/submit/report | For submitting a new report | POST | description, location, latitude, longitude, imageURL, severity, userId | Citizen |
+| /api/upload | For uploading files to the server | POST | bytes (file data) | Citizen |
+| /api/detect/single | For detecting whether an image has a pothole. (Object Detection) | POST | image_url | Citizen |
+| /api/profile/update | For updating a user's basic profile details | POST | userId, emailId, name, photoURL | Citizen |
+| /api/user/validate | For validating a user's status (allowed / blocked) | POST | emailId | Citizen |
   
 (Complete System Architecture Here) 
   
@@ -156,7 +156,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 | Protobuf Compilation (Model) | Backend |
 | Image Annotations | Backend |
 | Rename and Rearrange Files (Script) | Backend |
-| Image Crawler on top of Py Image Search | Backend |
+| Image Crawler on top of PyImage Search | Backend |
 | Video File Slicing (Script) | Backend |
 | Output File Storage | Backend | 
 | Route 53 (Hosted Zone) on Amazon Web Services (AWS) | Backend | 
