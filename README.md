@@ -95,11 +95,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
   ```
   
   * The dataset, the annotation files, the built model have all been provided with the repository for reference. You can follow the steps mentioned above only if you wish to have a fresh start to training and testing the model. 
-  
-#### System Diagram
- 
- <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/system_diagram/system_diagram.png" alt="system diagram"/> 
-  
+    
 #### 2. Database
  * The database is comprised of 4 main entities. (Authority, Public User, Reports, Comments). 
  
@@ -146,7 +142,9 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 | /api/profile/update | For updating a user's basic profile details | POST | userId, emailId, name, photoURL | Citizen |
 | /api/user/validate | For validating a user's status (allowed / blocked) | POST | emailId | Citizen |
   
-(Complete System Architecture Here) 
+#### System Diagram
+ 
+ <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/system_diagram/system_diagram.png" alt="system diagram"/> 
   
 ### Key Features
 | Feature Name | App Usage |
@@ -190,6 +188,10 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 * Apache is used for Server needs.
 * FileZilla and GitBash are used for SFTP and SSH needs. 
 * Chrome Dev Tools and Postman are used for API Manual Testing. 
+
+### Technology Stack (Complete Frontend and Backend)
+
+<img src=""/>
 
 ### Instructions to Set-Up the Backend Application 
  * Follow the instructions on this page to install nodejs and npm. Once successfully done, proceed to the next steps. 
