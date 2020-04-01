@@ -213,9 +213,10 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 ### Instructions to Set-Up and Deploy the Backend Application 
 
 #### Amazon Web Service Set-Up
-The authority's application has been hosted through Amazon Web Services. To set up the application on a EC2 Instance and a Route 53 Hosted Zone for your choice of Domain Name from a site like Freenom for free refer the following screenshots. 
+* The authority's application has been hosted through Amazon Web Services. To set up the application on a EC2 Instance and a Route 53 Hosted Zone for your choice of Domain Name from a site like Freenom for free refer the following screenshots. 
 
-Login to the Amazon AWS Console. Once registered and logged in successfully click on Launch EC2 Instance. Follow the steps in the screenshots. 
+* Login to the Amazon AWS Console. Once registered and logged in successfully click on Launch EC2 Instance. Follow the steps in the screenshots. 
+
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/A.PNG" alt="aws">
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/B.PNG" alt="aws">
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/C.PNG" alt="aws">
@@ -223,7 +224,8 @@ Login to the Amazon AWS Console. Once registered and logged in successfully clic
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/D.PNG" alt="aws">
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/3.PNG" alt="aws">
 
-Your console should now look similar to this after a successful launch. 
+* Your console should now look similar to this after a successful launch. 
+
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/1.PNG" alt="aws">
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/2.PNG" alt="aws">
 
@@ -231,6 +233,10 @@ For connecting your domain, search for Route 53 in the app bar and create a host
 
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/5.PNG" alt="aws">
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/4.PNG" alt="aws">
+
+#### Darkflow Set-Up
+* Follow the disussion in the process description above. In addition to that refer the README.md file for the darkflow repository. View the links mentioned in the process description and finally review documentaion on Darknet. 
+* Here are some important links. [Darknet](https://pjreddie.com/darknet/) [Darkflow](https://github.com/thtrieu/darkflow) [Training YOLO with DarkFlow](https://sites.google.com/view/tensorflow-example-java-api/complete-guide-to-train-yolo/train-yolo-with-darkflow)
 
 ### Future Work
 * Pothole Dimension (Width / Height) Analysis 
