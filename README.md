@@ -56,27 +56,48 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 #### The backend comprises of two main sections. The first being the object detection model built using Darkflow. The second being the Flask API for data exchange between the model built, the database and the frontend. 
 ##### 1. Object Detection Model
   * As the focus of the application was to create a rest api to automate the process of pothole validation with media files, from the beginning itself a cloud server was used for implementation. A [EC2 Amazon Web Services Instance](https://aws.amazon.com/ec2/instance-types/) was used for this purpose. 
-  * AWS EC2 C5 instance (model: c5.xlarge) after choosing Ubuntu 18 which features the Intel Xeon Platinum 8000 series and offers a set of 4vCPUs each with 8 GiB of memory was chosen for training the object detection model. 
+  
+  * AWS EC2 C5 Instance (model: c5.xlarge) after choosing Ubuntu 18 which features the Intel Xeon Platinum 8000 series and offers a set of 4vCPUs each with 8 GiB of memory was chosen for training the object detection model. 
+  
   * The model is trained on top of [Darkflow](https://github.com/thtrieu/darkflow)  and built on top of pretrained weights which were obtained from [Darknet](https://pjreddie.com/darknet/). 
+  
   * For crawling images relevant to our label ‘pothole’, images were crawled using the open source google image search package, along with using the serpapi image search tool.
+  
   * In addition to this freely available pothole video feeds to create the dataset were also used. For a near to decent detection result, we should look to collect at least 500+ images. The dataset has been provided with the repository. 
+  
   * In case of video files, we can upload it to our server using an sftp client like Filezilla or by directly using ssh on the terminal of our local machine. The next step was to write a script to slice this uploaded video to images. Python’s  OpenCV (cv2 package and Video Capture Module)  to divide the feed into frames. 
+  
   * Using ‘pip install’ the following dependencies need to be added. [pillow, lxml, jupyter, matplotlib, protobuffer] 
+  
   * After cloning the DarkFlow repository, to prepare the input files for DarkFlow we need to consider two things. Firstly, we need an RGB image which is encoded as jpeg or png and secondly, we need a list of bounding boxes (xmin, ymin, xmax, ymax) for the image and the class of the object in the bounding box. 
+  
   * Our class, in this case, is ‘pothole’. We then need to label our images with a tool like LabelImg to identify areas of interest with bounding boxes. 
+  
   * LabelImg is a graphical image annotation tool that is written in Python and uses Qt for the graphical interface. 
+  
   * It supports Python 2 and 3. The annotations are saved as XML files in the Pascal VOC format We can split the data to train and test sets before running the training command. 
+  
   * Now the datasets needed for feeding darkflow package in the required format are available.
+  
   * We need to first configure Darkflow by modifying the configuration file and labels.txt file. 
+  
   Then we need to make a copy from cfg/tiny-yolo-voc.cfg and create a cfg/tiny-yolo-voc-1c.cfg file with the same content. Change the line 114 to filters=30 [num * (classes + 5)] and set classes=1 as we have only one class ‘pothole’. 
+  
   * In the label.txt file remove all the labels and just keep the pothole label. 
+  
   * Once done, refer to the training command on this link. [Train Yolo with Darkflow](https://sites.google.com/view/tensorflow-example-java-api/complete-guide-to-train-yolo/train-yolo-with-darkflow), and start training with the dataset created earlier.
+  
   * Using the test sets the model can be verified to check the accuracy of our newly trained object tracking model. This can now also be applied to various snippets of video to highlight the potential of object detection on potholes. Refer to the link mentioned in the above step for the testing command. It also contains options to restart training from a previous checkpoint.
+  
   * We will then proceed to saving the built graph as a protobuf file. Read this link on [Darkflow](https://github.com/thtrieu/darkflow#save-the-built-graph-to-a-protobuf-file-pb) to understand this better. 
   ```
   flow --pbLoad built_graph/yolo.pb --metaLoad built_graph/yolo.meta --imgdir sample_img/
   ```
+  
   * The dataset, the annotation files, the built model have all been provided with the repository for reference. You can follow the steps mentioned above only if you wish to have a fresh start to training and testing the model. 
+  
+#### 2. Flask API
+ * 
   
 
   
