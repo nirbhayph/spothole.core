@@ -173,7 +173,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 | Geo Near Reports Querying | Authority |
 | Flask API Controller | Authority, Citizen |
 
-### Tools Libraries and Languages Used
+### Tools, Libraries and Languages Used
 * The Backend Application has been built with Python at its Core. 
 * The REST API has been built with Flask. 
 * The Object Detection Model has been built using DarkFlow on top of Darknet. 
