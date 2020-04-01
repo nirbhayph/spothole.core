@@ -145,43 +145,29 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
   
 (Complete System Architecture Here) 
   
-### Key Functionalities 
-| Functionality Name | Usage Space |
+### Key Features
+| Feature Name | App Usage |
 | --- | --- |
-| Pie Chart (Status Wise Counts) | Dashboard (Analytics Section) |
-| Stacked Bar Chart (Status and Severity Wise Reports) | Dashboard (Analytics Section) |
-| Deep Learning Powered Media Validated Reports | Dashboard |
-| Filterable Datatable for Displaying Zone Wise Reports | Dashboard |
-| Export CSV, Filter By Column | Dashboard, Manage Users |
-| Search Reports (Datatable) | Dashboard |
-| Severity Indicator (0-10) (Update Report) | Update Report |
-| Custom Text Area Description Box (For Additional Comments) | View, Update Report |
-| Custom Alerts (Single and Multi Actionables) | Update Report - Submit |
-| Successful Status Update Email Notification | Update Report |
-| Update Report Status Selectable | Update Report |
-| Static Image based Geographic Map | View Report |
-| Comments Section (Communication Exchange Between Citizen and Authority) | View Report |
-| Custom Error Alerts | Update Report |
-| Map Legend Indicating Severity Levels | Map View |
-| Street View Renderer | Map View |
-| Custom Markers for Potholes Distributed by Severity in Authority's Zone | Map View |
-| Custom Info Window (When Clicked on Marker) | Map View | 
-| Update Report by Clicking Button on Info Window | Map View |
-| Map Full Screen View | Map View |
-| Heat Map Layer Toggle | Map View |
-| Filterable Datatable for Displaying Zone Wise Users | Manage Users |
-| Search Users (Datatable) | Manage Users |
-| Block Users (Datatable) | Manage Users |
-| Email Notifcation on Block / Unblock | Manage Users |
-| Profile Details (Avatar, Name , Email Id) | Profile |
-| Authority's Summarized Report Statistics Based on Status (Submitted, Approved, Completed, Working, Cancelled) | Profile |
-| Custom Random Background | Log In | 
-| O-Auth 2.0 Sign In | Log In |
-| Only Registered Authority Email Addresses can Sign In | Log In |
-| 404, 401 | Error Pages |
-| Fixed App Bar | All Screens |
-| Left Menu Drawer (App Bar) | All Screens |
-| App Bar Menu Icons (App Bar - Float Right) | All Screens |
+| Darkflow, Darknet Incorporation | Backend |
+| Pothole Detection / Validation (Images, Video) | Citizen |
+| Protobuf Compilation (Model) | Backend |
+| Image Annotations | Backend |
+| Rename and Rearrange Files (Script) | Backend |
+| Video File Slicing (Script) | Backend |
+| Output File Storage | Backend | 
+| Route 53 (Hosted Zone) on Amazon Web Services (AWS) | Backend | 
+| SSL Configuration | Backend |
+| Security Groups (AWS) | Backend |
+| Media Uploads | Citizen |
+| CRUD Operations Authorities Entity | Authority, Citizen |
+| CRUD Operations Public Users Entity | Authority, Citizen |
+| CRUD Operations Comments Entity | Authority, Citizen |
+| CRUD Operations Reports Entity | Authority, Citizen |
+| Email Service | Authoritiy |
+| Allow / Block User Status | Authority |
+| App User Authorization Check | Authority, Citizen |
+| Geo Near Reports Querying | Authority |
+| Flask API Controller | Authority, Citizen |
 
 ### Libraries Used
 * The Application has been built using React.js
