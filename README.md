@@ -113,7 +113,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
  
  * A service layer file in python has been created with different methods which are used by the api to communicate with the database for performing CRUD operations. 
  
-##### Schema Diagram 
+#### Schema Diagram 
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/mysql_database/spothole_db_schema.png" alt="Schema Diagram">
  
 #### 3. Flask API 
