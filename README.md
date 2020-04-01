@@ -98,7 +98,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
   
 #### System Diagram
  
- <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/system_diagram/spothole_core_system_diagram_white_bg.pdf" alt="system diagram"/> 
+ <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/system_diagram/spothole_core_system_diagram_white_bg.png" alt="system diagram"/> 
   
 #### 2. Database
  * The database is comprised of 4 main entities. (Authority, Public User, Reports, Comments). 
