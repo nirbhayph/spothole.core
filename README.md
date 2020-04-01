@@ -81,7 +81,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
   
   * We need to first configure Darkflow by modifying the configuration file and labels.txt file. 
   
-  Then we need to make a copy from cfg/tiny-yolo-voc.cfg and create a cfg/tiny-yolo-voc-1c.cfg file with the same content. Change the line 114 to filters=30 [num * (classes + 5)] and set classes=1 as we have only one class ‘pothole’. 
+  * Then we need to make a copy from cfg/tiny-yolo-voc.cfg and create a cfg/tiny-yolo-voc-1c.cfg file with the same content. Change the line 114 to filters=30 [num * (classes + 5)] and set classes=1 as we have only one class ‘pothole’. 
   
   * In the label.txt file remove all the labels and just keep the pothole label. 
   
