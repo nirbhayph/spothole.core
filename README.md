@@ -96,7 +96,9 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
   
   * The dataset, the annotation files, the built model have all been provided with the repository for reference. You can follow the steps mentioned above only if you wish to have a fresh start to training and testing the model. 
   
-  (Process Diagram Here) 
+#### System Diagram
+ 
+ <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/system_diagram/spothole_core_system_diagram_white_bg.pdf"> 
   
 #### 2. Database
  * The database is comprised of 4 main entities. (Authority, Public User, Reports, Comments). 
