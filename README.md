@@ -119,6 +119,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
  * For understanding the front end side of things please refer the important urls section of this read me file. 
  
  * The following endpoints have been created for the API. 
+ 1. Authority's App
 	* /api/submit/report/comment - For submitting a report on a comment
 	* /api/reports/comments - For getting all comments for a report
 	* /api/profile/authority/update - For updating a authority's profile details
@@ -128,16 +129,16 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 	* /api/profile/authority/data - For retreiving a authority's profile details, location and address
 	* /api/authority/update/user/status - For changing the status of a user (blocked / allowed)
 	* /api/authority/send/email - For notifying a user via email 
-
+2. Citizen's App
 	* /api/reports/all - For retrieving all users reports
 	* /api/reports - For retrieveing a particular user's reports 
 	* /api/submit/report/comment - For submitting a comment on a report
 	* /api/reports/comments - For retrieving all comments on a report
 	* /api/submit/report - For submitting a new report 
-	* /api/upload - 
-	* /api/detect/single
-	* /api/profile/update
-	* /api/user/validate
+	* /api/upload - For uploading files to the server
+	* /api/detect/single - For detecting whether an image has a pothole. (Object Detection)
+	* /api/profile/update - For updating a user's basic profile details
+	* /api/user/validate - For validating a user's status (allowed / blocked)
   
 
   
