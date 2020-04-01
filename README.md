@@ -210,12 +210,27 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 ```
  * Visit http://localhost:3000 in your browser to see spothole authority application running.
 
-### Deploying 
+### Instructions to Set-Up and Deploy the Backend Application 
 
+#### Amazon Web Service Set-Up
 The authority's application has been hosted through Amazon Web Services. To set up the application on a EC2 Instance and a Route 53 Hosted Zone for your choice of Domain Name from a site like Freenom for free refer the following screenshots. 
 
+Login to the Amazon AWS Console. Once registered and logged in successfully click on Launch EC2 Instance. Follow the steps in the screenshots. 
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/A.PNG" alt="aws">
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/B.PNG" alt="aws">
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/C.PNG" alt="aws">
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/D.PNG" alt="aws">
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/D.PNG" alt="aws">
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/3.PNG" alt="aws">
 
+Your console should now look similar to this after a successful launch. 
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/1.PNG" alt="aws">
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/2.PNG" alt="aws">
 
+For connecting your domain, search for Route 53 in the app bar and create a hosted zone. Create a new hosted zone and then record sets for connecting your domain. Use this name servers in your domain's settings to form a connection both ways. 
+
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/5.PNG" alt="aws">
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/aws/4.PNG" alt="aws">
 
 ### Future Work
 * Pothole Dimension (Width / Height) Analysis 
