@@ -113,10 +113,14 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
  
  * A service layer file in python has been created with different methods which are used by the api to communicate with the database for performing CRUD operations. 
  
+(Schema Diagram Here)
+ 
 #### 3. Flask API 
  * The Flask API has been built for data exchange between the front end applications, the object detection model and the database. 
  
  * For understanding the front end side of things please refer the important urls section of this read me file. 
+ 
+ * A app controller script has been created to communicate with the service layers (mysql, mail service and parent(object detection))
  
  * The following endpoints have been created for the API. 
 
@@ -139,15 +143,10 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 | /api/profile/update | For updating a user's basic profile details | POST | Parameters | Citizen |
 | /api/user/validate | For validating a user's status (allowed / blocked) | POST | Parameters | Citizen |
   
-
+(Complete System Architecture Here) 
   
-
-
-
-
-
-### Feature Stack 
-| Feature Name | Screen Name |
+### Key Functionalities 
+| Functionality Name | Usage Space |
 | --- | --- |
 | Pie Chart (Status Wise Counts) | Dashboard (Analytics Section) |
 | Stacked Bar Chart (Status and Severity Wise Reports) | Dashboard (Analytics Section) |
@@ -225,51 +224,6 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 | recharts | ^1.8.5 |
 | recompose | ^0.30.0 |
 
-### Process Description
-The Authority's Application has been Divided into 6 Major Sections. 
-
-#### 1. Dashboard
-  * Once the authority has signed in successfully, they are presented with the dashboard screen which is divided into two main sections. 
-  * The first being the analytics section. This section contains two charts. 
-  * The first is a donut chart which shows a high level view of the user reports in the authority's zone based on the status (approved, submitted, in progress, etc).
-  * Next to that is the stacked bar chart which provides a more detailed view of the status, but this time based on severity as well. 
-  * The second section on the dashboard is a filterable data table containing details about the various user reports. This datatable has options for sorting, filtering, selecting specific columns, searching, exporting the data as csv and printing the table contents too. 
-  * On clicking any report in the datatable, the authority is presented with the option to update it (status and severity). On pressing update they are asked to describe their reason of update in a required custom description box. 
-  * Authorities can also comment on the report they clicked on and view all the other details of the report as a user would in their My Complaints screen. 
-  * Users are sent notifications through email after any update is made on their report. 
-
-#### 2. Map Region View
-  * Another screen in the authority app is the map region view section. Here they can view potholes reported in their region through an interactive map view. 
-  * Existing users who have at least one report created can manage the status of their report and add additional comments to it or reply on comments from authorities using this section of the App. 
-  * A legend is displayed for helping understand the map better. 
-  * Custom markers for potholes with different status values ranging on severity are presented to the auhtority on the map. 
-  * Authorities can click on any of the markers to view the information window for it. On pressing the view button in the info window authorities are presented with the view and update detailed report section. 
-  * They can update the status and severity directly from this view after clicking the button in the info window. On pressing update they are asked to describe their reason of update in a required custom description box. 
-  * Authorities can also comment on the report they clicked on and view all the other details of the report as a user would in their My Complaints screen. 
-  * Users are sent notifications through email after any update is made on their report. 
-  * Also, there is a street view renderer for the users. 
-  * Finally there is an option to toggle on and off a heat map layer which is weighted on the severity of potholes reported in the region. 
-  
-#### 3. Manage Users
-  * This screen presents the authority to manage all active users in their zone through a filterable data table. 
-  * The data table contains options to filter, search, sort, select columns. 
-  * They can view their basic profile details. 
-  * They can update thier status to either blocked or allowed based on their activity too. 
-  * Users are sent out email notifications regarding updates in their status everytime an authority makes a change. 
-  
-#### 4. Profile 
-  * This screen contains the basic details (avatar, name, email address of the user) 
-  * It also contains the address of the authority. 
-  * It is then followed by a counter for reports in the authority's zone with a status of either pending, in progress, approved, completed or cancelled. 
-  
-#### 5. Sign In Screen 
-  * This screen contains the option to login using Google. 
-  * This uses Google's OAuth 2.0 GAPI for logging in the user. 
-  * This also uses the Unsplash API for generating random backgrounds on the side. (When in desktop mode)
-  * The app also uses local storage actively to maintain the session state every time in communication with GAPI. 
-  * OAuth2.0 Unsplash Logout Local Storage. 
-  * An important point to note is that in the authority's app the ouath api has been linked to a stand alone database to authorize authority log-ins. 
-  
 #### Note. Features associated with each screen have been mentioned in the Feature Stack Table. 
 
 (Process Diagram Here)
