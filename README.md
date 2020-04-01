@@ -195,21 +195,6 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
  * On your terminal. (You can use Git-Bash if you wish to) 
 
-```
-1. git clone https://github.com/nirbhayph/spothole.authority.git
-2. cd spothole.authority
-3. npm install 
-4. Change the API KEY for Google Maps by creating a key from https://developers.google.com/maps/documentation/javascript/get-api-key. 
-5. Change the ClientId for Google Oauth from https://developers.google.com/identity/protocols/oauth2.
-6. Setup the flask and deep learning app on your machine by following the setup instructions for the backend. 
-7. Setup the database according to the instructions provided in the backend application's readme document. 
-8. Create at least one user in the authority datatabase before proceeding. 
-9. Once your backend is working and you have tested the local apis using a tool like Postman, change the api constants in the utility folder of the authority app's src/component directory
-10. Finally, npm start
-11. Enjoy using the app. Feel free to make contributions and raise Pull Requests. 
-```
- * Visit http://localhost:3000 in your browser to see spothole authority application running.
-
 ### Instructions to Set-Up and Deploy the Backend Application 
 
 #### Amazon Web Service Set-Up
@@ -244,12 +229,16 @@ For connecting your domain, search for Route 53 in the app bar and create a host
 
 #### Flask Set-Up
 * You can follow this guide to learn about setting up Flask. [Guide](https://flask.palletsprojects.com/en/1.1.x/tutorial/factory/)
+* You will have to make changes in the utility file under the flask app's directory by changing the directory constants according to your project structure. 
+* For running on https you will have to setup certbot and use your key files in the app controller. Or you can ignore that run on http.
 
 #### Apache Set-Up
 * Follow this guide to learn more. [Apache Setup](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview).
 
 #### Certbot Set-Up
 * Follow this guide to setup a ssl certificate for your ubuntu ec2 instance [Guide](https://www.webcreta.com/how-to-letsencrypt-ssl-certificate-install-on-aws-ec2-ubuntu-instance/)
+
+#### Enjoy using the app. Feel free to make contributions and raise pull requests. Run the app_controller python file to see your api running. 
 
 ### Future Work
 * Pothole Dimension (Width / Height) Analysis 
@@ -281,26 +270,24 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ### Acknowledgements and Mentions
 
-* @reactjs - https://reactjs.org/
-* @material-design-react - https://material-ui.com/
-* @react-google-maps - https://www.npmjs.com/package/react-google-maps
-* @google-maps-api - https://developers.google.com/maps/documentation/javascript/
-* @google-oauth-gapi - https://developers.google.com/identity/protocols/oauth2
-* @mui-treasury - https://mui-treasury.com/
-* @mui-datatable - https://github.com/gregnb/mui-datatables
-* @recharts - http://recharts.org/en-US/
-* @axios - https://www.npmjs.com/package/axios
-* @dateformat - https://www.npmjs.com/package/dateformat
-* @AmericanAutomobileAssociation - https://www.aaa.com/stop/
-* @SafetyResourceCenter - https://www.trafficsafetystore.com/blog/the-plague-of-potholes-how-to-save-americas-roadways/
-* @loadash - https://lodash.com/
-* @create-react-app - https://reactjs.org/docs/create-a-new-react-app.html
-* @gh-pages - https://www.npmjs.com/package/gh-pages
 * @github - https://github.com
-* @roshniw - https://roshniwadhwa.me
-* @trello - https://trell.com
-* @figma - https://figma.com
-* @google-keep - https://keep.google.com
-* @npmjs - https://www.npmjs.com
-* @imgbb - https://imgbb.com/
-* @snap2html - https://www.rlvision.com/snap2html/about.php
+* @githublfs - https://git-lfs.github.com/
+* @smtplib - https://docs.python.org/3/library/smtplib.html 
+* @tensorflow - https://www.tensorflow.org/install/pip
+* @darkflow - https://github.com/thtrieu/darkflow
+* @darknet - https://pjreddie.com/darknet/
+* @dhirensc - https://github.com/dhirensc
+* @filezilla - https://filezilla-project.org/
+* @postman - https://www.postman.com/
+* @chrome-dev - https://developers.google.com/web/tools/chrome-devtools
+* @aws - https://aws.amazon.com/
+* @certbot - https://certbot.eff.org/
+* @freenom - https://www.freenom.com/en/index.html?lang=en
+* @labelimg - https://github.com/tzutalin/labelImg
+* @stackoverflow - https://stackoverflow.com/
+* @mysql - https://www.mysql.com/
+* @lucidchart - https://www.lucidchart.com/
+* @flask - https://flask.palletsprojects.com/en/1.1.x/
+* @cv2 - https://pypi.org/project/opencv-python/
+* @dbdiagram.io - https://dbdiagram.io/home
+* @letsencrypt - https://letsencrypt.org/
