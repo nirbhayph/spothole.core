@@ -119,24 +119,25 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
  * For understanding the front end side of things please refer the important urls section of this read me file. 
  
  * The following endpoints have been created for the API. 
-| Feature Name | Screen Name | Method | Params | Application
+
+| End Point | Screen Name | Method | Params | Application
 | --- | --- | --- | --- | --- |
-| /api/profile/authority/update | For updating a authority's profile details | POST | | Authority |
-| /api/authority/check | For validating auhtority credentials | POST | | Authority |
-| /api/authority/reports/geonear | For querying reports in an authority's zone | POST | | Authority |
-| /api/authority/update/report | For updating a report's status (for authority) | POST | | Authority |
-| /api/profile/authority/data | For retreiving a authority's profile details, location and address | POST | | Authority |
-| /api/authority/update/user/status | For changing the status of a user (blocked / allowed) | POST | | Authority |
-| /api/authority/send/email | For notifying a user via email | POST | | Authority | 
-| /api/reports/all | For retrieving all users reports | POST | | Citizen, Authority |
-| /api/reports | For retrieveing a particular user's reports | POST | | Citizen, Authority |
-| /api/submit/report/comment | For submitting a comment on a report | POST | | Citizen, Authority |
-| /api/reports/comments | For retrieving all comments on a report | POST | | Citizen, Authority |
-| /api/submit/report | For submitting a new report | POST | | Citizen |
-| /api/upload | For uploading files to the server | POST | | Citizen |
-| /api/detect/single | For detecting whether an image has a pothole. (Object Detection) | POST | | Citizen |
-| /api/profile/update | For updating a user's basic profile details | POST | | Citizen |
-| /api/user/validate | For validating a user's status (allowed / blocked) | POST | | Citizen |
+| /api/profile/authority/update | For updating a authority's profile details | POST | Parameters | Authority |
+| /api/authority/check | For validating auhtority credentials | POST | Parameters | Authority |
+| /api/authority/reports/geonear | For querying reports in an authority's zone | POST | Parameters | Authority |
+| /api/authority/update/report | For updating a report's status (for authority) | POST | Parameters | Authority |
+| /api/profile/authority/data | For retreiving a authority's profile details, location and address | POST | Parameters | Authority |
+| /api/authority/update/user/status | For changing the status of a user (blocked / allowed) | POST | Parameters | Authority |
+| /api/authority/send/email | For notifying a user via email | POST | Parameters | Authority | 
+| /api/reports/all | For retrieving all users reports | POST | Parameters | Citizen, Authority |
+| /api/reports | For retrieveing a particular user's reports | POST | Parameters | Citizen, Authority |
+| /api/submit/report/comment | For submitting a comment on a report | POST | Parameters | Citizen, Authority |
+| /api/reports/comments | For retrieving all comments on a report | POST | Parameters | Citizen, Authority |
+| /api/submit/report | For submitting a new report | POST | Parameters | Citizen |
+| /api/upload | For uploading files to the server | POST | Parameters | Citizen |
+| /api/detect/single | For detecting whether an image has a pothole. (Object Detection) | POST | Parameters | Citizen |
+| /api/profile/update | For updating a user's basic profile details | POST | Parameters | Citizen |
+| /api/user/validate | For validating a user's status (allowed / blocked) | POST | Parameters | Citizen |
   
 
   
