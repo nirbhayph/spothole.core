@@ -191,7 +191,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 
 ### Technology Stack (Complete Frontend and Backend)
 
-<img src=""/>
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/technology_stack/spothole_stack_white_bg.png"/>
 
 ### Instructions to Set-Up the Backend Application 
  * Follow the instructions on this page to install nodejs and npm. Once successfully done, proceed to the next steps. 
