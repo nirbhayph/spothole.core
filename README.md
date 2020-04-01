@@ -53,7 +53,7 @@ Link to Authority App's Repository: https://github.com/nirbhayph/spothole.author
 Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_structure/
 
 ### Process Description
-#### The backend comprises of two main sections. The first being the object detection model built using Darkflow. The second being the Flask API for data exchange between the model built, the database and the frontend. 
+#### The backend comprises of three main sections. The first being the object detection model built using Darkflow. The second being the database for the application. The third being the Flask API for data exchange between the model built, the database and the frontend. 
 #### 1. Object Detection Model
   * As the focus of the application was to create a rest api to automate the process of pothole validation with media files, from the beginning itself a cloud server was used for implementation. A [EC2 Amazon Web Services Instance](https://aws.amazon.com/ec2/instance-types/) was used for this purpose. 
   
@@ -98,8 +98,46 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
   
   (Process Diagram Here) 
   
-#### 2. Flask API
- * 
+#### 2. Database
+ * The database is comprised of 4 main entities. (Authority, Public User, Reports, Comments). 
+ 
+ * Please refer the database scheme to know more about the attributes associated with each entity. 
+ 
+ * The authority is someone that has the authorization to manage reports in their zone. A zone is specfied as a 1000 mts radius. 
+ 
+ * A public user is someone that can create a report using the citizen app. 
+ 
+ * A report is basically details of a submission that has been validated through the object detection model. 
+ 
+ * Comments are basically communication exchange between an authority and a user on a report. 
+ 
+ * A service layer file in python has been created with different methods which are used by the api to communicate with the database for performing CRUD operations. 
+ 
+#### 3. Flask API 
+ * The Flask API has been built for data exchange between the front end applications, the object detection model and the database. 
+ 
+ * For understanding the front end side of things please refer the important urls section of this read me file. 
+ 
+ * The following endpoints have been created for the API. 
+	* /api/submit/report/comment - For submitting a report on a comment
+	* /api/reports/comments - For getting all comments for a report
+	* /api/profile/authority/update - For updating a authority's profile details
+	* /api/authority/check - For validating auhtority credentials
+	* /api/authority/reports/geonear - For querying reports in an authority's zone
+	* /api/authority/update/report - For updating a report's status (for authority)
+	* /api/profile/authority/data - For retreiving a authority's profile details, location and address
+	* /api/authority/update/user/status - For changing the status of a user (blocked / allowed)
+	* /api/authority/send/email - For notifying a user via email 
+
+	* /api/reports/all - For retrieving all users reports
+	* /api/reports - For retrieveing a particular user's reports 
+	* /api/submit/report/comment - For submitting a comment on a report
+	* /api/reports/comments - For retrieving all comments on a report
+	* /api/submit/report - For submitting a new report 
+	* /api/upload - 
+	* /api/detect/single
+	* /api/profile/update
+	* /api/user/validate
   
 
   
