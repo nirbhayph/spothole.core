@@ -240,6 +240,7 @@ For connecting your domain, search for Route 53 in the app bar and create a host
 
 #### MySQL Set-Up 
 * Please follow a setup guide like [this](https://linuxize.com/post/how-to-install-mysql-on-ubuntu-18-04/) to setup MySQL on to your instance. 
+* Import the .sql file provided in the repository to finish setting up mysql for the purpose of this application. 
 
 #### Flask Set-Up
 * You can follow this guide to learn about setting up Flask. [Guide](https://flask.palletsprojects.com/en/1.1.x/tutorial/factory/)
