@@ -236,7 +236,19 @@ For connecting your domain, search for Route 53 in the app bar and create a host
 
 #### Darkflow Set-Up
 * Follow the disussion in the process description above. In addition to that refer the README.md file for the darkflow repository. View the links mentioned in the process description and finally review documentaion on Darknet. 
-* Here are some important links. [Darknet](https://pjreddie.com/darknet/) [Darkflow](https://github.com/thtrieu/darkflow) [Training YOLO with DarkFlow](https://sites.google.com/view/tensorflow-example-java-api/complete-guide-to-train-yolo/train-yolo-with-darkflow)
+* Here are some important links. [Darknet](https://pjreddie.com/darknet/), [Darkflow](https://github.com/thtrieu/darkflow), [Training YOLO with DarkFlow](https://sites.google.com/view/tensorflow-example-java-api/complete-guide-to-train-yolo/train-yolo-with-darkflow)
+
+#### MySQL Set-Up 
+* Please follow a setup guide like [this](https://linuxize.com/post/how-to-install-mysql-on-ubuntu-18-04/) to setup MySQL on to your instance. 
+
+#### Flask Set-Up
+* You can follow this guide to learn about setting up Flask. [Guide](https://flask.palletsprojects.com/en/1.1.x/tutorial/factory/)
+
+#### Apache Set-Up
+* Follow this guide to learn more. [Apache Setup](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview).
+
+#### Certbot Set-Up
+* Follow this guide to setup a ssl certificate for your ubuntu ec2 instance [Guide](https://www.webcreta.com/how-to-letsencrypt-ssl-certificate-install-on-aws-ec2-ubuntu-instance/)
 
 ### Future Work
 * Pothole Dimension (Width / Height) Analysis 
