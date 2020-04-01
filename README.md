@@ -57,7 +57,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 #### 1. Object Detection Model
   * As the focus of the application was to create a rest api to automate the process of pothole validation with media files, from the beginning itself a cloud server was used for implementation. A [EC2 Amazon Web Services Instance](https://aws.amazon.com/ec2/instance-types/) was used for this purpose. 
   
-  * AWS EC2 C5 Instance (model: c5.xlarge) after choosing Ubuntu 18 which features the Intel Xeon Platinum 8000 series and offers a set of 4vCPUs each with 8 GiB of memory was chosen for training the object detection model. 
+  * AWS EC2 C5 Instance (model: c5.xlarge) after choosing Ubuntu 18 which features the Intel Xeon Platinum 8000 series and offers a set of 4vCPUs each with 8 GiB of memory was chosen for training the object detection model. Please refer the deployment section to learn more about setting this up. 
   
   * The model is trained on top of [Darkflow](https://github.com/thtrieu/darkflow)  and built on top of pretrained weights which were obtained from [Darknet](https://pjreddie.com/darknet/). 
   
@@ -189,7 +189,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 * FileZilla and GitBash are used for SFTP and SSH needs. 
 * Chrome Dev Tools and Postman are used for API Manual Testing. 
 
-### Instructions to Set-Up the Backend Application
+### Instructions to Set-Up the Backend Application 
  * Follow the instructions on this page to install nodejs and npm. Once successfully done, proceed to the next steps. 
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
@@ -212,7 +212,10 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
 ### Deploying 
 
-The authority's application has been hosted through Amazon Web Services. 
+The authority's application has been hosted through Amazon Web Services. To set up the application on a EC2 Instance and a Route 53 Hosted Zone for your choice of Domain Name from a site like Freenom for free refer the following screenshots. 
+
+
+
 
 ### Future Work
 * Pothole Dimension (Width / Height) Analysis 
