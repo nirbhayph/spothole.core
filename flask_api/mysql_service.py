@@ -139,7 +139,7 @@ def validate_user(data):
     for result in results:
         return result[0]
 
-    return "blocked"
+    return "allowed"
 
 # update user status
 def update_user_status(data):
@@ -216,7 +216,7 @@ def get_reports_for_authority(data):
     for authority_item in authority:
        authority_latitude = authority_item[4]
        authority_longitude = authority_item[5]
-       sql = "SELECT * FROM __reports__ JOIN __public_users__ WHERE (st_distance_sphere(location_point, POINT(" + str(authority_latitude) + "," + str(authority_longitude) + ")) < 1000) AND (__reports__.userId = __public_users__.user_id)"
+       sql = "SELECT * FROM __reports__ JOIN __public_users__ WHERE (st_distance_sphere(location_point, POINT(" + str(authority_latitude) + "," + str(authority_longitude) + ")) < 5000) AND (__reports__.userId = __public_users__.user_id)"
        cursor.execute(sql)
        reports = cursor.fetchall()
        content = {}
