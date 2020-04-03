@@ -123,7 +123,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
  
  * The following endpoints have been created for the API. 
 
-| End Point | Screen Name | Method | Required Params (Keys) | Application
+| End Point | Description | Method | Required Params (Keys) | Application
 | --- | --- | --- | --- | --- |
 | /api/profile/authority/update | For updating a authority's profile details | POST | authorityId, emailId, name, photoURL | Authority |
 | /api/authority/check | For validating auhtority credentials | POST | emailId | Authority |
