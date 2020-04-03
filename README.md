@@ -181,7 +181,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 * Package flask_cors has been used to manage Cross Origin Requests. 
 * Package mysql is used to interact between Python and MySql. 
 * Package cv2 is used to create Bounding Boxes at Runtime.
-* The Parent Service which Communicates with the Deep Learning Model uses the TensorFlow Compressed Model created.
+* The Parent Service which Communicates with the Deep Learning Model uses the TensorFlow Model created.
 * Amazon Web Services has been used for Deployment Purposes. 
 * Certbot has been used for HTTPS Configuration
 * Freenom has been used for Domain needs.
