@@ -193,12 +193,6 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/technology_stack/spothole_stack_white_bg.png"/>
 
-### Instructions to Set-Up the Backend Application 
- * Follow the instructions on this page to install nodejs and npm. Once successfully done, proceed to the next steps. 
-https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
-
- * On your terminal. (You can use Git-Bash if you wish to) 
-
 ### Instructions to Set-Up and Deploy the Backend Application 
 
 #### Amazon Web Service Set-Up
