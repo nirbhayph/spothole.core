@@ -109,7 +109,7 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
  
  * Please refer the database scheme to know more about the attributes associated with each entity. 
  
- * The authority is someone that has the authorization to manage reports in their zone. A zone is specfied as a 1000 mts radius. 
+ * The authority is someone that has the authorization to manage reports in their zone. A zone is specfied as a 5000 mts radius. 
  
  * A public user is someone that can create a report using the citizen app. 
  
