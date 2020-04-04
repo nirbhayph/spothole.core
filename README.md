@@ -39,6 +39,10 @@ Keeping the roads in good condition along with tracking damages is a challenge w
 #### Demo 
  * Link to Citizen App Demo: https://nirbhay.me/spothole/
  * Link to Authority App Demo: https://nirbhay.me/spothole.authority/
+ 
+#### Application Wire Frames
+ * Link to Citizen App Wire Frames: https://nirbhay.me/spothole/WireFrames/
+ * Link to Authority App Wire Frames: https://nirbhay.me/spothole.authority/WireFrames/
 
 #### Landing Page 
 Link to Landing Page: https://nirbhay.me/spothole/home
