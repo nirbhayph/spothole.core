@@ -193,6 +193,10 @@ Link to Project's Directory Structure: https://nirbhay.me/spothole.core/project_
 
 <img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/technology_stack/spothole_stack_white_bg.png"/>
 
+### Architectural Tiers (Complete Frontend and Backend)
+
+<img src="https://github.com/nirbhayph/spothole.core/blob/master/screenshots/architectural_tiers/architectural_tiers.png"/>
+
 ### Instructions to Set-Up and Deploy the Backend Application 
 
 #### Amazon Web Service Set-Up
