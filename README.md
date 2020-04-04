@@ -4,6 +4,13 @@
 
 ## Spothole Core Backend (Object Detection + Flask API)
 
+This project is the <b>Core Backend End Segment</b> for the <b>Capstone Project</b> for my <b>Master's in Information Sciences and Technologies</b> at <b>Rochester Institute of Technology</b>.
+
+### Project Committee Members:
+ * Dr. Charles Border
+ * Prof. Edward Holden
+ * Prof. Bryan French
+
 ### Introduction
 
 A major problem being faced by municipalities around the world is maintaining the
