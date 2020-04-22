@@ -155,5 +155,7 @@ def send_email():
     return send_email_spothole(data["data"]["emailId"], data["data"]["message"], data["data"]["subject"])
 
 # run app. use ssl and serve over https
+# for ssl context please supply paths for both 
+# the pem files (Here they are named as fullchain.pem and privkey.pem)
 if __name__ == '__main__':
     app.run(host='0.0.0.0', ssl_context=('fullchain.pem', 'privkey.pem'))
