@@ -5,8 +5,8 @@ import smtplib
 # sending an email (accepts recipient email, message and optional subject line
 def send_email_spothole(mailToEmail, message, subject="New notification from Spothole!"):
     try:
-        gmailaddress = "contact.spothole@gmail.com"
-        gmailpassword = "Amazon@12345"
+        gmailaddress = "<YOUR EMAIL ADDRESS HERE>" # EMAIL ADDRESS HERE
+        gmailpassword = "<YOUR EMAIL PASSWORD HERE>" # EMAIL PASSWORD HERE
         mailto = mailToEmail
         msg = 'From: Spothole App\nSubject: {}\n\n{}'.format(subject, message)
         mailServer = smtplib.SMTP('smtp.gmail.com', 587)
