@@ -53,6 +53,9 @@ Keeping the roads in good condition along with tracking damages is a challenge w
 - Link to Citizen App Demo: https://nirbhay.me/spothole/
 - Link to Authority App Demo: https://nirbhay.me/spothole.authority/
 
+#### Presentation
+Link to Canva Presentation: https://bit.ly/spothole-ppt
+
 #### Application Wire Frames
 
 - Link to Citizen App Wire Frames: https://nirbhay.me/spothole/WireFrames/
